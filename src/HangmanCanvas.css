@@ -1,0 +1,254 @@
+@media (max-width: 700px)
+{
+    #canvas{
+        width: min(450px,70vw);
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #fig{
+        width: 150px;
+        height:190px;
+    }
+
+    #hor{
+        width: 8px;
+        height: 190px;
+        background-color: black;
+        position: absolute;
+    }
+    
+    #ver1{
+        width: 100px;
+        height: 8px;
+        background-color: black;
+        position: absolute;
+        /* margin-top: 3em;
+        margin-left: 8em; */
+    }
+    
+    #ver2{
+        width: 150px;
+        height: 8px;
+        background-color: black;
+        position: absolute;
+        margin-top: 11.5em;
+    }
+    
+    #tilt2{
+        width: 14px;
+        height: 8px;
+        background-color: black;
+        position: absolute;
+        margin-top: 8.13em;
+    }
+    #tilt{
+        width: 80px;
+        height: 8px;
+        background-color: black;
+        position: absolute;
+        margin-top: 9.8em;
+        transform: rotate(44deg);
+    }
+    #rope{
+        width: 0.3em;
+        height: 1.8em;
+        background-color: black;
+        position: absolute;
+        margin-left: 4.98em;
+    }
+    
+    #b1{
+        width: 2.3em;
+        height: 2.3em;
+        position: absolute;
+        margin-top: 1.8em;
+        margin-left: 3.9em;
+        border-radius: 50%;
+    }
+    
+    #b2{
+        width: 0.6em;
+        height: 3.4em;
+        position: absolute;
+        margin-top: 4em;
+        margin-left: 4.8em;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+    
+    #b3{
+        width: 0.5em;
+        height: 2.4em;
+        position: absolute;
+        margin-top: 4.6em;
+        margin-left: 4.1em;
+        transform: rotate(30deg);
+        border-radius: 3px;
+    }
+    
+    #b4{
+        width: 0.5em;
+        height: 2.4em;
+        position: absolute;
+        margin-top: 4.6em;
+        margin-left: 5.6em;
+        transform: rotate(150deg);
+        border-radius: 3px;
+    }
+    
+    #b5{
+        width: 0.5em;
+        height: 2.5em;
+        position: absolute;
+        margin-top: 7em;
+        margin-left: 4.1em;
+        transform: rotate(30deg);
+        border-radius: 3px;
+    }
+    
+    #b6{
+        width: 0.5em;
+        height: 2.5em;
+        position: absolute;
+        margin-top: 7em;
+        margin-left: 5.6em;
+        transform: rotate(150deg);
+        border-radius: 3px;
+    }
+
+    h3{
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 701px)
+{
+    #canvas{
+        width: 450px;
+        aspect-ratio: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #fig{
+        width: 200px;
+        height: 300px;
+    }
+    #hor{
+        width: 10px;
+        height: 300px;
+        background-color: black;
+        position: absolute;
+        /* margin-top: 3em; */
+        /* margin-left: 8em; */
+    }
+    
+    #ver1{
+        width: 150px;
+        height: 10px;
+        background-color: black;
+        position: absolute;
+        /* margin-top: 3em;
+        margin-left: 8em; */
+    }
+    
+    #ver2{
+        width: 200px;
+        height: 10px;
+        background-color: black;
+        position: absolute;
+        margin-top: 18.2em;
+        /* margin-left: 8em; */
+    }
+    
+    #tilt2{
+        width: 17px;
+        height: 11px;
+        background-color: black;
+        position: absolute;
+        margin-top: 13.9em;
+    }
+    #tilt{
+        width: 102px;
+        height: 11px;
+        background-color: black;
+        position: absolute;
+        margin-top: 16em;
+        
+        transform: rotate(44deg);
+    }
+    #rope{
+        width: 0.3em;
+        height: 3em;
+        background-color: black;
+        position: absolute;
+        margin-left: 7.2em;
+    }
+    
+    #b1{
+        width: 3em;
+        height: 3em;
+        position: absolute;
+        margin-top: 3em;
+        margin-left: 5.75em;
+        border-radius: 50%;
+    }
+    
+    #b2{
+        width: 0.6em;
+        height: 5em;
+        position: absolute;
+        margin-top: 5.9em;
+        margin-left: 7em;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+    
+    #b3{
+        width: 0.5em;
+        height: 3.5em;
+        position: absolute;
+        margin-top: 6.7em;
+        margin-left: 6.1em;
+        transform: rotate(30deg);
+        border-radius: 3px;
+    }
+    
+    #b4{
+        width: 0.5em;
+        height: 3.5em;
+        position: absolute;
+        margin-top: 6.7em;
+        margin-left: 8em;
+        transform: rotate(150deg);
+        border-radius: 3px;
+    }
+    
+    #b5{
+        width: 0.5em;
+        height: 3.5em;
+        position: absolute;
+        margin-top: 10.5em;
+        margin-left: 6.1em;
+        transform: rotate(30deg);
+        border-radius: 3px;
+    }
+    
+    #b6{
+        width: 0.5em;
+        height: 3.5em;
+        position: absolute;
+        margin-top: 10.5em;
+        margin-left: 8em;
+        transform: rotate(150deg);
+        border-radius: 3px;
+    }
+}
+
+

@@ -1,0 +1,77 @@
+@media (max-width: 700px)
+{
+    #control{
+        
+        height: 450px;
+        width: min(450px,100vw);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+     
+    #word{
+        font-family: serif;
+        font-size: x-large;
+        margin-top: 8px;
+        margin-bottom: 0px;
+    }
+
+    #keypad{
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 701px)
+{
+    #control{
+        
+        height: 450px;
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    #word{
+        font-family: serif;
+        font-size: x-large;
+        margin: 0;
+    }
+}
+
+#keypad{
+    width: 80%;
+    text-align: center;
+}
+
+.keys{
+    font-family: monospace;
+    background-color: aliceblue;
+    border-radius: 0.2em;
+    border: none;
+    width: 15%;
+    aspect-ratio: 1;
+    margin: 0.7%;
+    cursor: pointer;
+    outline: 1px solid grey;
+}
+
+.keys:disabled{
+    background-color: rgb(244, 244, 245);
+    border-radius: 0.2em;
+    width: 14%;
+    cursor: auto;
+}
+
+#reset{
+    width: 20%;
+    height: 8%;
+    background-color: lightgreen;
+    border-radius: 1em;
+    border: none;
+    cursor: pointer;
+    font-family: monospace;
+    font-weight: 600;
+}

@@ -1,25 +1,45 @@
-import logo from './logo.svg';
 import './App.css';
+import Hangman from './Hangman';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state={
+      choice:"",
+    };
+    this.handleChoice=this.handleChoice.bind(this);
+  }
+
+  handleChoice(e){
+    let option=e.target.value;
+    this.setState({choice:option});
+  }
+
+  generateOptions()
+  {
+    return ['Hangman','Lights Out'].map( game => (
+      <button
+        value={game}
+        className="gameoptions"
+        onClick={this.handleChoice}
+        disabled={this.state.choice===game}
         >
-          Learn React
-        </a>
-      </header>
+          {game}
+        </button>
+    ));
+  }
+
+  render(){
+  return (
+    <div>
+      <h1>React Games</h1>
+      <div id='optionsdiv'>{this.generateOptions()}</div>
+      <div id="playarea">
+        {this.state.choice==='Hangman'?<Hangman/>:null}
+      </div>
     </div>
   );
 }
-
+}
 export default App;
