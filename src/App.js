@@ -1,5 +1,6 @@
 import './App.css';
 import Hangman from './Hangman';
+import Lightsout from './Lightsout';
 import React from 'react';
 
 class App extends React.Component {
@@ -14,6 +15,15 @@ class App extends React.Component {
   handleChoice(e){
     let option=e.target.value;
     this.setState({choice:option});
+    let r=document.querySelector(':root');
+    if(option==='Hangman'){
+      r.style.setProperty('--backcolor','seashell');
+      r.style.setProperty('--hcolor','black');
+    }
+    else if(option==='Lights Out'){
+      r.style.setProperty('--backcolor','#141414');
+      r.style.setProperty('--hcolor','white');
+    }
   }
 
   generateOptions()
@@ -37,6 +47,7 @@ class App extends React.Component {
       <div id='optionsdiv'>{this.generateOptions()}</div>
       <div id="playarea">
         {this.state.choice==='Hangman'?<Hangman/>:null}
+        {this.state.choice==='Lights Out'?<Lightsout/>:null}
       </div>
     </div>
   );

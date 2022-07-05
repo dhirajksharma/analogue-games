@@ -1,7 +1,6 @@
-@media (max-width:700px) {
-    #optionsdiv{
-        margin-bottom: 30px;
-    }
+:root{
+    --backcolor: seashell;
+    --hcolor: black;
 }
 
 #playarea{
@@ -10,7 +9,9 @@
     align-items: center;
 }
 body{
-    background-color:seashell;
+    background-color: var(--backcolor);
+    color: var(--hcolor);
+    transition: all 1s ease-out;
 }
 h1{
     text-align: center;

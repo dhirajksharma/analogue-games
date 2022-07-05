@@ -1,0 +1,69 @@
+@keyframes disco{
+    5% {background-color: #141414;}
+    10% {background-color: #2ee6f7;}
+    15% {background-color: #141414;}
+    20% {background-color: #2ee6f7;}
+    25% {background-color: #141414;}
+    30% {background-color: #2ee6f7;}
+    35% {background-color: #141414;}
+    40% {background-color: #2ee6f7;}
+    45% {background-color: #141414;}
+    50% {background-color: #2ee6f7;}
+    55% {background-color: #141414;}
+    60% {background-color: #2ee6f7;}
+    65% {background-color: #141414;}
+    70% {background-color: #2ee6f7;}
+    75% {background-color: #141414;}
+    80% {background-color: #2ee6f7;}
+    85% {background-color: #141414;}
+    90% {background-color: #2ee6f7;}
+    95% {background-color: #141414;}
+    100% {background-color: #2ee6f7;}
+}
+
+@media (max-width: 500px){
+    .cell{
+    width: 60px;
+    height: 60px;
+    border: 0.01em solid #efefef;
+    border-radius: 2px;
+    margin: 2px;
+    cursor: pointer;
+    }
+
+    .cell-lit, .vic{
+        width: 60px;
+        height: 60px;
+        border: 0.01em solid #efefef;
+        border-radius: 2px;
+        margin: 2px;
+        background-color: #2ee6f7;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 501px){
+    .cell{
+    width: 70px;
+    height: 70px;
+    border: 0.01em solid #efefef;
+    border-radius: 2px;
+    margin: 2px;
+    cursor: pointer;
+    }
+
+    .cell-lit, .vic{
+        width: 70px;
+        height: 70px;
+        border: 0.01em solid #efefef;
+        border-radius: 2px;
+        margin: 2px;
+        background-color: #2ee6f7;
+        cursor: pointer;
+    }
+    
+}
+
+.vic{
+    animation: disco 4s 5;
+}
