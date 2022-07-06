@@ -6,6 +6,7 @@ A set of simple games built using React.js [Link to the game](https://dhirajksha
 **Version 1.5**
 - Added Lights Out game
 - Updated Meta Tags
+- Added Info Modal
 
 **Version 1**
 - Site published with Hangman game
