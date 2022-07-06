@@ -132,7 +132,7 @@ class Lightboard extends React.Component{
           <div id="Lightsout">
             <audio id='click' src={click}></audio>
             <audio id='win' src={win}></audio>
-            <h2>{this.state.inPlay===true?`${this.state.attempts} Attemps Made`:
+            <h2>{this.state.inPlay===true?`${this.state.attempts} Attempts Made`:
                   this.state.hasWon===true?'Victory':null}</h2>
             <div id='board'>
               {this.generateboard()}

@@ -46,7 +46,7 @@ class HangmanControl extends React.Component{
                 break;
             }
         }
-        if(flag==0)
+        if(flag===0)
             this.victory();
         else{
             if(st===1)
