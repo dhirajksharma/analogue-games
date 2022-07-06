@@ -1,6 +1,7 @@
 :root{
     --backcolor: seashell;
     --hcolor: black;
+    --linkcolor: blue;
 }
 
 #playarea{
@@ -38,4 +39,65 @@ h1{
     transform: translate(3px,3px);
     box-shadow: 2px 2px saddlebrown;
     transition: all 100ms;
+}
+
+#overlay{
+    display: none;
+    position: fixed;
+    overflow: auto;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    padding-top: 10vh;
+}
+
+@media (max-width: 800px)
+{
+    #infodiv{
+        font-size: 0.9em;
+        width: 70vw;
+    }
+}
+
+@media (min-width: 801px)
+{
+    #infodiv{
+        width: 50vw;
+    }
+}
+
+#infodiv{
+    z-index: 1;
+    background-color: var(--backcolor);
+    border-radius: 10px;
+    border: 1px solid var(--hcolor);
+    margin: auto;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+#close{
+    z-index: 2;
+}
+.infodivdiv{
+    border-top: 1px solid var(--hcolor);
+    margin-bottom: 5%;
+}
+
+#infodiv h2{
+    font-weight: 600;
+}
+
+#infodiv h3{
+    font-weight: 200;
+}
+
+#infodiv a{
+    color: var(--linkcolor);
 }
