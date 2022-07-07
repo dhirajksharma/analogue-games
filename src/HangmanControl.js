@@ -1,14 +1,21 @@
 import React from "react";
+import axios from "axios";
 import './HangmanControl.css';
 
 class HangmanControl extends React.Component{
     constructor(props) {
         super(props);
-        this.state = { guessed: new Set(), answer: "fanta", nWrong: 0, gameover: 0 };
+        this.state = { guessed: new Set(), answer: "", nWrong: 0, gameover: 0 };
         this.handleGuess = this.handleGuess.bind(this);
         this.reset= this.reset.bind(this);
         this.victory= this.victory.bind(this);
         
+    }
+
+    componentDidMount(){
+        axios.get('https://random-word-api.herokuapp.com/word?length=5').then(response=>{
+            this.setState({...this.state,answer: response.data[0]})
+        });
     }
 
     victory()
@@ -23,9 +30,6 @@ class HangmanControl extends React.Component{
           .split("")
           .map(ltr => (this.state.guessed.has(ltr) ? ltr : "_"));
     }
-
-    
-
 
     handleGuess(evt) {
     let ltr = evt.target.value;
@@ -73,7 +77,10 @@ class HangmanControl extends React.Component{
         ));
     }
     reset() {
-        this.setState({...this.state, guessed: new Set(),nWrong:0,gameover:0});
+        axios.get('https://random-word-api.herokuapp.com/word?length=5').then(response=>{
+            this.setState({...this.state,answer: response.data[0],guessed: new Set(),nWrong:0,gameover:0});
+        });
+        
         window.scrollTo({top:0,behavior:"smooth"});
         this.props.handleChances(-1);
     }

@@ -10,3 +10,6 @@ A set of simple games built using React.js [Link to the game](https://dhirajksha
 
 **Version 1**
 - Site published with Hangman game
+
+## Resources
+- The random words generated for Hangman are fetched from this [API](https://random-word-api.herokuapp.com/home)
