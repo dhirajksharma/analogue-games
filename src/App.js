@@ -23,7 +23,7 @@ class App extends React.Component {
     return ['Hangman','Lights-Out','Yahtzee','Info'].map( game => (
       <NavLink
         className={(navData) => navData.isActive ? "gameoptionactive" : "gameoptions"}
-        to={`/${game}`}>{game}
+        to={`/reactgames/${game}`}>{game}
       </NavLink>
     ));
   }
@@ -31,15 +31,15 @@ class App extends React.Component {
   render(){
   return (
     <div>
-      <div id='navbar'><NavLink to='/'><img id='logo' src={logo}></img></NavLink><h1>React Games</h1><img id='menu' onClick={this.toggleNav} src={menu}></img></div>
+      <div id='navbar'><NavLink to='/reactgames'><img id='logo' src={logo}></img></NavLink><h1>React Games</h1><img id='menu' onClick={this.toggleNav} src={menu}></img></div>
       <div id='optionsdiv' style={{display:'none'}}>{this.generateOptions()}</div>
       <div id="playarea">
         <Routes>
-          <Route path='/' element={<Home/>}></Route>
-          <Route path='/Hangman' element={<Hangman/>}></Route>
-          <Route path='/Lights-Out' element={<Lightsout/>}></Route>
-          <Route path='/Yahtzee' element={<Yahtzee/>}></Route>
-          <Route path='/Info' element={<Info/>}></Route>
+          <Route path='/reactgames' element={<Home/>}></Route>
+          <Route path='/reactgames/Hangman' element={<Hangman/>}></Route>
+          <Route path='/reactgames/Lights-Out' element={<Lightsout/>}></Route>
+          <Route path='/reactgames/Yahtzee' element={<Yahtzee/>}></Route>
+          <Route path='/reactgames/Info' element={<Info/>}></Route>
         </Routes>
       </div>
     </div>
