@@ -3,6 +3,11 @@
 A set of simple games built using React.js [Link to the game](https://dhirajksharma.github.io/reactgames)
 
 ## Version History
+**Version 2**
+- Changed Info Modal to dedicated page
+- Reworked navbar using React Router
+- Updated Home Page
+
 **Version 1.5**
 - Added Lights Out game
 - Updated Meta Tags
