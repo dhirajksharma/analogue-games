@@ -1,0 +1,83 @@
+@media (min-width: 501px)
+{
+    #dispboard{
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 500px)
+{
+    #dispboard{
+        flex-direction: column;
+    }
+
+    #dispboard p{
+        width: 85vw;
+        text-align: center;
+    }
+
+    .disp-img{
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 750px){
+    .disp-img{
+        width: 250px;
+    }
+}
+
+@media (min-width: 751px){
+    .disp-img{
+        width: 300px;
+    }
+}
+
+#dispboard{
+    display: flex;
+    width: 90vw;
+    max-width: 900px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 3px 4px 5px rgb(0,0,0,0.5);
+}
+
+.disp-img{
+    
+    border-radius: 0.3em;
+    margin: 10px;
+}
+
+#dispboard div{
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#dispboard p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 0;
+}
+
+#dispboard button{
+        width: 70px;
+        height: 28px;
+        background-color: lightgreen;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 15px;
+}
+
+#dispboard button a{
+    text-decoration: none;
+    color: black;
+    font-family: monospace;
+    font-weight: 600;
+}

@@ -17,7 +17,12 @@ class Hangman extends React.Component {
         this.handleVictory=this.handleVictory.bind(this);
         this.handleChances=this.handleChances.bind(this);
     }
-    
+    componentDidMount(){
+      let r=document.querySelector(':root');
+      r.style.setProperty('--backcolor','seashell');
+      r.style.setProperty('--hcolor','black');
+      r.style.setProperty('--linkcolor','blue');
+    }
     handleVictory()
     {
         this.setState({...this.state,victory:1});
