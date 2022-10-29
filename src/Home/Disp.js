@@ -10,7 +10,7 @@ class Disp extends React.Component{
                 <div>
                 <h3>{this.props.name}</h3>
                 <p>{this.props.cont}</p>
-                <button><Link to={`/reactgames/${this.props.name}`}>Play</Link></button>
+                <button><Link to={`/${this.props.name}`}>Play</Link></button>
                 </div>
             </div>
         );
