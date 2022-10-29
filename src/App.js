@@ -23,7 +23,7 @@ class App extends React.Component {
     return ['Hangman','Lights-Out','Yahtzee','Info'].map( game => (
       <NavLink
         className={(navData) => navData.isActive ? "gameoptionactive" : "gameoptions"}
-        to={`/reactgames/${game}`}>{game}
+        to={`/${game}`}>{game}
       </NavLink>
     ));
   }
@@ -32,7 +32,7 @@ class App extends React.Component {
   return (
     <div>
       <div id='navbar'>
-        <NavLink to='/reactgames'>
+        <NavLink to='/'>
           <img id='logo' src={logo}></img>
           </NavLink>
         <h1>React Games</h1>
