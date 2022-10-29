@@ -41,11 +41,11 @@ class App extends React.Component {
       <div id='optionsdiv' style={{display:'none'}}>{this.generateOptions()}</div>
       <div id="playarea">
         <Routes>
-          <Route path='/reactgames' element={<Home/>}></Route>
-          <Route path='/reactgames/Hangman' element={<Hangman/>}></Route>
-          <Route path='/reactgames/Lights-Out' element={<Lightsout/>}></Route>
-          <Route path='/reactgames/Yahtzee' element={<Yahtzee/>}></Route>
-          <Route path='/reactgames/Info' element={<Info/>}></Route>
+          <Route path='/' element={<Home/>}></Route>
+          <Route path='/Hangman' element={<Hangman/>}></Route>
+          <Route path='/Lights-Out' element={<Lightsout/>}></Route>
+          <Route path='/Yahtzee' element={<Yahtzee/>}></Route>
+          <Route path='/Info' element={<Info/>}></Route>
         </Routes>
       </div>
     </div>
