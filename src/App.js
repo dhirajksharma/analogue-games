@@ -31,7 +31,13 @@ class App extends React.Component {
   render(){
   return (
     <div>
-      <div id='navbar'><NavLink to='/reactgames'><img id='logo' src={logo}></img></NavLink><h1>React Games</h1><img id='menu' onClick={this.toggleNav} src={menu}></img></div>
+      <div id='navbar'>
+        <NavLink to='/reactgames'>
+          <img id='logo' src={logo}></img>
+          </NavLink>
+        <h1>React Games</h1>
+        <img id='menu' onClick={this.toggleNav} src={menu}></img>
+      </div>
       <div id='optionsdiv' style={{display:'none'}}>{this.generateOptions()}</div>
       <div id="playarea">
         <Routes>
