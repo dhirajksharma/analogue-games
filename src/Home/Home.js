@@ -11,7 +11,7 @@ class Home extends React.Component{
         para:[
             "Do you have it in you to guess the 5 letter word and save your life? Every guess can either get you a step closer to life or to death. Think! Every letter counts",
             "Maybe you are not the dictionary guy, maybe you like to play with lights. Let's see how many moves you need to complete the game. Ready, Steady, Lights On!",
-            "Coming Soon",
+            "The object of Yahtzee is to obtain the highest score from throwing 5 dice. The game consists of 13 rounds. In each round, you roll the dice and then score the roll in one of 13 categories. You must score once in each category. The score is determined by a different rule for each category. The game ends once all 13 categories have been scored."
         ]
     };
     render(){

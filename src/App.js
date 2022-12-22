@@ -3,19 +3,16 @@ import logo from './logo.png';
 import menu from './menu.png';
 import Hangman from './Hangman/Hangman';
 import Lightsout from './Lightsout/Lightsout';
+import Yahtzee from './Yahtzee/Yahtzee';
 import Info from './Info';
 import Home from './Home/Home';
 import React from 'react';
+import $ from 'jquery';
 import {Route, Routes, NavLink} from 'react-router-dom';
-import Yahtzee from './Yahtzee/Yahtzee';
 
 class App extends React.Component {
   toggleNav(){
-    let nav=document.querySelector('#optionsdiv');
-    if(nav.style.display==='flex')
-      nav.style.display='none';
-    else
-      nav.style.display='flex';
+    $('#optionsdiv').slideToggle('slow');
   }
 
   generateOptions()
