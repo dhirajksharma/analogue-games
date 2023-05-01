@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  user-select: none;
 }
 
 code {
@@ -21,3 +22,31 @@ html {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+@media (min-width: 640px){
+  .slick-slide{
+    opacity: 0;
+  }
+}
+.slick-slide{
+  transform: scale(0.92);
+  transition: all 400ms ease-in-out;
+  padding-bottom: 10px;
+}
+
+.slick-center{
+  transform: scale(1);
+  opacity: 1;
+}
+
+.slick-prev::before, .slick-next::before{
+  color: black !important;
+}
+
+.card-outer:hover .card-inner{
+  transform: scale(1.01)
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
