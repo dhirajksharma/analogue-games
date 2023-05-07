@@ -12,7 +12,7 @@ class App extends React.Component {
     <div className='max-w-[600px] h-screen mx-auto'>
       
       <div id='navbar' className='flex w-[92%] mx-auto justify-between items-center py-4'>
-        <h1 className='inline-block text-3xl font-bold font-goldman'>PS React</h1>
+        <h1 className='inline-block text-3xl font-bold font-goldman dark: text-white'>PS React</h1>
         <NavLink to='/'>
           <img id='logo' src={logo} className='h-16'></img>
         </NavLink>

@@ -87,7 +87,7 @@ class HangmanControl extends React.Component{
     render(){
         return (
             <div id="control">
-                <p id='word'>{this.guessedWord()}</p>
+                <p id='word' className="dark:text-white">{this.guessedWord()}</p>
                 <div id='keypad'>{this.generateButtons()}</div>
                 <button id='reset' onClick={this.reset}>Reset</button>
             </div>

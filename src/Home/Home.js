@@ -93,44 +93,13 @@ class Home extends React.Component{
                 </div>
             {
                 this.state.currGame==='bonjour'?
-                
-                    <div className='w-[80%] h-[3.5rem] bg-white mx-auto rounded-lg mt-6 flex justify-around items-center'>
-                        {
-                            JSON.parse(localStorage.getItem(this.state.currGame))!==null?(
-                                <div className='flex items-center'>
-                                    <img src={thunder} className='aspect-square h-8'></img>
-                                        {JSON.parse(localStorage.getItem(this.state.currGame))}
-                                </div>
-                            ):(
-                                null
-                            )
-                        }
-                        <p className='font-poppins text-white'>
-                        {
-                            JSON.parse(localStorage.getItem(this.state.currGame))!==null?'Let\'s Beat This Now!':'Let\'s Play Something New!'
-                        }
-                        </p>
+                    <div className='w-[80%] h-[3.5rem] bg-transparent mx-auto mt-6'>
                     </div>
                 :
-                <Link to={
-                    this.state.currGame==='bonjour'?'/':this.state.currGame
-                }>
-                    <div className='w-[80%] h-[3.5rem] bg-green-400 mx-auto rounded-lg mt-6 flex justify-around items-center'>
-                        {
-                            JSON.parse(localStorage.getItem(this.state.currGame))!==null?(
-                                <div className='flex items-center'>
-                                    <img src={thunder} className='aspect-square h-8'></img>
-                                        {JSON.parse(localStorage.getItem(this.state.currGame))}
-                                </div>
-                            ):(
-                                null
-                            )
-                        }
-                        <p className='font-poppins'>
-                        {
-                            JSON.parse(localStorage.getItem(this.state.currGame))!==null?'Let\'s Beat This Now!':'Let\'s Play!'
-                        }
-                        </p>
+                <Link to={this.state.currGame}>
+                    <div className='w-[80%] h-[3.5rem] bg-green-400 mx-auto rounded-lg mt-6 flex justify-center items-center'>
+                        <img src={thunder} className='aspect-square h-8 ml-1'></img>
+                        <p className='font-poppins'>Let's Play!</p>
                     </div>
                 </Link>
             }    

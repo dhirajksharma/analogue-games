@@ -27,9 +27,9 @@ class HangmanCanvas extends React.Component{
                     style={{backgroundColor: this.props.b1col}}></div>
                 </div>
                 {this.props.vic===1?
-                    <h3 className='font-poppins mt-4'>Victory!!!</h3>:this.props.wrong<6?
-                    <h3 className='font-poppins mt-4'>{6-this.props.wrong} Guesses Left</h3>:
-                    <h3 className='font-poppins mt-4'>Game Over!!!</h3>}
+                    <h3 className='font-poppins mt-4 dark:text-white'>Victory!!!</h3>:this.props.wrong<6?
+                    <h3 className='font-poppins mt-4 dark:text-white'>{6-this.props.wrong} Guesses Left</h3>:
+                    <h3 className='font-poppins mt-4 dark:text-white'>Game Over!!!</h3>}
             </div>
         );
     }

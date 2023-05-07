@@ -8,6 +8,7 @@ body {
   user-select: none;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -41,6 +42,16 @@ html {
 
 .slick-prev::before, .slick-next::before{
   color: black !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  body{
+    background-color: #252527;
+  }
+  
+  .slick-prev::before, .slick-next::before{
+    color: #fefefe !important;
+  }  
 }
 
 .card-outer:hover .card-inner{

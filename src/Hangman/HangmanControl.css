@@ -1,12 +1,11 @@
-    #control{
-        
+#control{        
         height: 450px;
         width: min(450px,100vw);
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-    }
+}
      
     #word{
         font-family: serif;
@@ -43,12 +42,15 @@
 }
 
 #reset{
-    width: 20%;
-    height: 8%;
+    margin: 2em;
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
     background-color: lightgreen;
-    border-radius: 1em;
+    border-radius: 0.4em;
     border: none;
     cursor: pointer;
     font-family: monospace;
     font-weight: 600;
+    font-size: medium;
 }

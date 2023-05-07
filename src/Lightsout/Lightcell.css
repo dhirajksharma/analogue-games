@@ -21,24 +21,29 @@
     100% {background-color: #8fb8f8;}
 }
 
+.cell{
+width: 60px;
+height: 60px;
+border: 0.01em solid #424040;
+border-radius: 2px;
+margin: 2px;
+cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark) {
     .cell{
+        border-color: #fefefe;
+    }
+}
+.cell-lit, .vic{
     width: 60px;
     height: 60px;
-    border: 0.01em solid #424040;
+    border: 0.01em solid #efefef;
     border-radius: 2px;
     margin: 2px;
+    background-color: #8fb8f8;
     cursor: pointer;
-    }
-
-    .cell-lit, .vic{
-        width: 60px;
-        height: 60px;
-        border: 0.01em solid #efefef;
-        border-radius: 2px;
-        margin: 2px;
-        background-color: #8fb8f8;
-        cursor: pointer;
-    }
+}
    
 .vic{
     animation: disco 4s 5;
