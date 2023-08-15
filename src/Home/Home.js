@@ -25,8 +25,13 @@ class Home extends React.Component{
                 imgs:"bg-no-repeat bg-cover bg-[url('https://www.wallpaperbetter.com/wallpaper/737/3/587/game-boy-old-boy-hd-1080P-wallpaper.jpg')] bg-center"
             },
             {
+                title:"pokeduel",
+                para:"How about a simple yet fun and nostalgic game. Bring your friend along, and have a round or two of pokemon duels. The best trainer wins!",
+                imgs:"bg-no-repeat bg-cover bg-bottom bg-[url('https://e0.pxfuel.com/wallpapers/616/1021/desktop-wallpaper-cute-pikachu-ultra-pikachu-background-for-iphone-pc-and-macbook-pikachu-love.jpg')] bg-center"
+            },
+            {
                 title:"hangman",
-                para:"Do you have it in you to guess the 5 letter word and save your life? Every guess can either get you a step closer to life or to death. Think! Every letter counts",
+                para:"Do you have it in you to guess the 5 letter word and save your life? Every guess can either get you a step closer to life or to death. Think! Every letter counts.",
                 imgs:"bg-no-repeat bg-cover bg-[url('https://upload.wikimedia.org/wikipedia/commons/b/bf/The_Hanged_Man_MET_DT225350.jpg')] bg-center"
             },
             {

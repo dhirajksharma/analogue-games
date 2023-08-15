@@ -4,6 +4,7 @@ import Lightsout from './Lightsout/Lightsout';
 import Home from './Home/Home';
 import React from 'react';
 import {Route, Routes, NavLink} from 'react-router-dom';
+import Pokeduel from './Pokeduel/Pokeduel';
 
 class App extends React.Component {
   
@@ -22,6 +23,7 @@ class App extends React.Component {
         <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/Hangman' element={<Hangman/>}></Route>
+          <Route path='/Pokeduel' element={<Pokeduel/>}></Route>
           <Route path='/Lights-Out' element={<Lightsout/>}></Route>
         </Routes>
         </div>
