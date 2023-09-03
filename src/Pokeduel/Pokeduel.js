@@ -36,7 +36,7 @@ class Pokeduel extends React.Component{
         this.attack=this.attack.bind(this);
         this.declarewinner=this.declarewinner.bind(this);
 
-        this.arr=this.seqenceGenerator(100,800);
+        this.arr=this.seqenceGenerator(50,500);
     }
 
     componentDidMount(){

@@ -18,7 +18,7 @@ class Pokemon extends React.Component{
         
         return (
             <img id={this.props.id}
-            src={this.props.i!==0?`https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/images/${this.pad(this.props.i,3)}.png`:vs}
+            src={this.props.i!==0?`https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/${this.props.i}.svg`:vs}
             alt={this.props.i}
             className="pokemons pokeduelimg"
             onClick={(e)=>{
