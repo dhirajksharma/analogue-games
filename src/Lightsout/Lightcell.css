@@ -34,6 +34,10 @@
     .cell{
         border-color: #fefefe;
     }
+
+    .cell-lit{
+        box-shadow: 0 0 10px 5px #8fb8f8;
+    }
 }
 .cell-lit, .vic{
     width: 60px;
@@ -43,7 +47,7 @@
     margin: 2px;
     background-color: #8fb8f8;
     cursor: pointer;
-    box-shadow: 0 0 10px 5px #8fb8f8;
+    box-shadow: 0 0 10px 1px #8fb8f8;
 }
    
 .vic{
