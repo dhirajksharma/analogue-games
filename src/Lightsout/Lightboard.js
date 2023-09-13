@@ -132,8 +132,9 @@ class Lightboard extends React.Component{
           <div id="Lightsout">
             <audio id='click' src={click}></audio>
             <audio id='win' src={win}></audio>
-            <h2 className="font-poppins text-lg mb-4 dark:text-white">{this.state.inPlay===true?`${this.state.attempts} Attempts Made`:
-                  this.state.hasWon===true?'Victory':null}</h2>
+            <h2 className="font-poppins text-lg mb-4 dark:text-white">
+              {this.state.inPlay===true?`${this.state.attempts} Attempts Made`:
+              this.state.hasWon===true?'Victory':'Turn off all the lights in minimum clicks'}</h2>
             <div id='board'>
               {this.generateboard()}
             </div>
