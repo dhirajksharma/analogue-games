@@ -10,7 +10,7 @@ class App extends React.Component {
   
   render(){
   return (
-    <div className='max-w-[600px] h-screen mx-auto'>
+    <div className='h-screen mx-auto'>
       
       <div id='navbar' className='flex w-[92%] mx-auto justify-between items-center py-4'>
         <h1 className='inline-block text-3xl font-bold font-goldman text-black dark:text-white'>PS React</h1>

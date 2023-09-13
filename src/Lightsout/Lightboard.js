@@ -137,7 +137,7 @@ class Lightboard extends React.Component{
             <div id='board'>
               {this.generateboard()}
             </div>
-            <button id="operate" onClick={this.handleStart}>Start</button>
+            <button id="operate" className="controlbtn" onClick={this.handleStart}>Start</button>
           </div>
         );
       }

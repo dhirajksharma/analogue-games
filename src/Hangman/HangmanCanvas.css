@@ -143,3 +143,15 @@
     h3{
         margin-bottom: 0;
     }
+
+@media (min-width:768px) {
+    #canvas{
+        transform: scale(1.2);
+    }
+}
+
+@media (min-width:1024px) {
+    #canvas{
+        transform: scale(1.3);
+    }
+}

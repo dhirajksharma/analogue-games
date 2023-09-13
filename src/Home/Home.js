@@ -88,7 +88,7 @@ class Home extends React.Component{
 
 
         return (
-            <div id="home" className='w-full pb-4 h-[80vh] flex flex-col justify-around overflow-hidden'>
+            <div id="home" className='w-full max-w-[600px] mx-auto pb-4 h-[80vh] flex flex-col justify-around overflow-hidden'>
                 <div className='sm:w-[80%] sm:mx-auto'>
                     <Slider {...sliderSettings}>
                         {this.props.db.map((db) =>

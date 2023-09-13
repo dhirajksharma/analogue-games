@@ -51,7 +51,11 @@ html {
   
   .slick-prev::before, .slick-next::before{
     color: #fefefe !important;
-  }  
+  }
+  
+  .controlbtn{
+    color:white;
+  }
 }
 
 .card-outer:hover .card-inner{
@@ -61,3 +65,22 @@ html {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.controlbtn{
+  background: none;
+  border-radius: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: medium;
+  font-weight: 800;
+  padding: 0.5em 1.2em;
+  border: 3px solid var(--operateborder);
+  transition: all 0.25s;
+}
+
+.controlbtn:hover
+{
+  border: 2px solid var(--operateborderhover);
+  box-shadow: 0 0.4em 0.5em -0.4em var(--operateborderhover);
+  transform: translateY(-0.15em);
+  cursor: pointer;
+}

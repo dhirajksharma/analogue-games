@@ -1,12 +1,17 @@
 #control{        
-        height: 450px;
-        width: min(450px,100vw);
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
+    height: 450px;
+    width: min(450px,100vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
-     
+
+@media (min-width: 768px){
+    #control{
+        justify-content: center;
+    }
+}
     #word{
         font-family: serif;
         font-size: x-large;
@@ -20,6 +25,7 @@
 #keypad{
     width: 80%;
     text-align: center;
+    margin-bottom: 24px;
 }
 
 .keys{
@@ -34,23 +40,13 @@
     outline: 1px solid grey;
 }
 
+.keys:hover{
+    background-color: aqua;
+}
+
 .keys:disabled{
-    background-color: rgb(244, 244, 245);
+    background-color: lightgrey;
     border-radius: 0.2em;
     width: 14%;
     cursor: auto;
-}
-
-#reset{
-    margin: 2em;
-    width: 80px;
-    height: 40px;
-    cursor: pointer;
-    background-color: lightgreen;
-    border-radius: 0.4em;
-    border: none;
-    cursor: pointer;
-    font-family: monospace;
-    font-weight: 600;
-    font-size: medium;
 }

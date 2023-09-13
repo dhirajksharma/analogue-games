@@ -1,5 +1,4 @@
 import React from 'react';
-import './Hangman.css';
 import HangmanCanvas from './HangmanCanvas';
 import HangmanControl from './HangmanControl';
 import lose from './lose.wav';
@@ -51,14 +50,14 @@ class Hangman extends React.Component {
     }
     render(){
     return (
-        <div id='Hangman'>
+        <div id='Hangman' className='flex flex-col md:flex-row justify-evenly items-center mt-1 md:mt-7'>
         <HangmanCanvas
-            b1col={this.state.bcol.at(0)}
-            b2col={this.state.bcol.at(1)}
-            b3col={this.state.bcol.at(2)}
-            b4col={this.state.bcol.at(3)}
-            b5col={this.state.bcol.at(4)}
-            b6col={this.state.bcol.at(5)}
+            b1col={this.state.bcol.at(5)}
+            b2col={this.state.bcol.at(2)}
+            b3col={this.state.bcol.at(3)}
+            b4col={this.state.bcol.at(4)}
+            b5col={this.state.bcol.at(1)}
+            b6col={this.state.bcol.at(0)}
             wrong={this.state.nWrong}
             vic={this.state.victory}
             />

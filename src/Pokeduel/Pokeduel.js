@@ -264,7 +264,7 @@ class Pokeduel extends React.Component{
             </section>
 
             <section id="deck" ref={this.pokemondeck} className="flex flex-col items-center content-center">
-                <button id="pokeoperate" ref={this.operatebutton}></button>
+                <button id="pokeoperate" ref={this.operatebutton} className="controlbtn"></button>
                 <h3 className="font-konkhmer mb-3" ref={this.banner}>Select Your Pokémons</h3>
                 <ul className="flex flex-wrap justify-center">
                 {

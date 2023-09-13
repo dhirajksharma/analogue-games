@@ -22,12 +22,12 @@
 }
 
 .cell{
-width: 60px;
-height: 60px;
-border: 0.01em solid #424040;
-border-radius: 2px;
-margin: 2px;
-cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border: 0.01em solid #424040;
+    border-radius: 2px;
+    margin: 2px;
+    cursor: pointer;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -43,6 +43,7 @@ cursor: pointer;
     margin: 2px;
     background-color: #8fb8f8;
     cursor: pointer;
+    box-shadow: 0 0 10px 5px #8fb8f8;
 }
    
 .vic{
